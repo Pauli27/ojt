@@ -3,122 +3,60 @@
 
 
 
-function Accenture()
+function Output()
 {
 	
 	$companies = array("Accenture" , "Pointone", "IBM" ,);
-	echo $companies[0];
-	echo "<br>";
-
-
-	$employee_multi = array ("Juan Lazy" => array('student_number'=> '001', 'course'=>'bsit' ),
-							"Aida Dame" => array('student_number'=> '002', 'course'=>'bsit' ),
-							"Merry Me<br>" => array('student_number'=> '003', 'course'=>'bscs' ),
-							);
-
-	$employee_of_the_year_Accenture = "Juan Lazy";
-	
-	foreach ($employee_multi as $key => $employee_name) 
-
+	foreach ($companies as $key => $company_name) 
 	{
 
-			if($key==$employee_of_the_year_Accenture && $employee_name!=$key)
+		// if($key==0)
+		// {
+			echo $company_name;
+			echo "<br>";
+
+			$employee_multi = array (0 => array("Juan_Lazy"=> "Juan Lazy", 'Aida_Dame'=>'Aida Dame','Merry_Me'=>'Merry Me' ),
+									1 => array('Grace_Payno'=> 'Grace Payno', 'Paul_Fernandez'=>'Paul Fernandez','Jed_De_Lumen'=>'Jed De Lumen' ),
+									2 => array('Maria_Carry'=> 'Maria Carry', 'Johnny_Brave'=>'Johnny Brave','Patrick_Star'=>'Patrick Star' ),
+									);
+			$employee_of_the_year_IBM = "Johnny Brave";
+			$employee_of_the_year_POINTONE = "Paul Fernandez";
+			$employee_of_the_year_Accenture = "Juan Lazy";
+
+
+			foreach ($employee_multi[$key] as $company_key => $employee_company)
+			
 			{
+				// print_r($employee_company);
+					if($employee_company==$employee_of_the_year_Accenture || $employee_company==$employee_of_the_year_POINTONE || $employee_company==$employee_of_the_year_IBM)
+					{
 
-				echo $key."****<br>";
+						echo $employee_company."****"."<br>";
 
+					}
+					else
+					{
+
+						echo $employee_company."<br>";
+
+					}
 				
-			}	
-			else
-			{
-				echo $key."<br>";
 
+	
 			}
 
+
+
+			echo "<br>";
+		// }
+
+
 	}
-	
-	/*$employee_accent = array('Juan Lazy' , 'Aida Dame' , 'Merry Me' ); 
-	echo implode("<br>",$employee_accent);
-	echo "<br><br>";*/
 	
 }
 
-function Pointone()
-{
-	$companies = array("Accenture" , "Pointone" , "IBM" ,);
-	echo $companies[1];
-	echo "<br>";
-
-	$employee_multi = array ("Grace Payno" => array('student_number'=> '001', 'course'=>'bsit' ),
-							"Paul Fernandez" => array('student_number'=> '002', 'course'=>'bsit' ),
-							"Jed De Lumen<br>" => array('student_number'=> '003', 'course'=>'bscs' ),
-							);
-
-	$employee_of_the_year_point = "Paul Fernandez";
-
-	foreach ($employee_multi as $key => $employee_name) 
-	{
-
-		if($key==$employee_of_the_year_point && $employee_name!=$key)
-
-		{
-			echo $key."****<br>";
-
-		}
-		else
-		{
-			echo $key."<br>";
-		}
-	}
-
-
-
+	Output();
 	
-	/*$employee_point = array('Grace Payno' ,'Paul Fernandez' , 'Jed De Lumen' );
-	echo implode("<br>",$employee_point);
-	echo "<br><br>";*/
-}
-
-function ibm()
-{
-	$companies = array("Accenture" , "Pointone" , "IBM" ,);
-	echo $companies[2];
-	echo "<br>";
-
-	$employee_multi = array ("Maria Carry" => array('student_number'=> '001', 'course'=>'bsit' ),
-							"Johnny Brave" => array('student_number'=> '002', 'course'=>'bsit' ),
-							"Patrick Star<br>" => array('student_number'=> '003', 'course'=>'bscs' ),
-							);
-
-	$employee_of_the_year_ibm = "Johnny Brave";
-
-	foreach ($employee_multi as $key => $employee_name) 
-	{
-		if($key==$employee_of_the_year_ibm && $employee_name!=$key)
-
-		{
-
-			echo $key."****<br>";
-		}
-
-		else
-		{
-			echo $key."<br>";
-		}
-	}
-
-
-	
-	/*$employee_ibm = array('Maria Carry' ,'Johnny Brave','Patrick Star', );
-	echo implode("<br>",$employee_ibm);
-	echo "<br><br>";*/
-}
-
-
-				
-				Accenture();
-				Pointone();
-				ibm();
 
 
 
