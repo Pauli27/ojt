@@ -76,7 +76,7 @@ FOREACH
 IF ELSE
 
 <?php
-
+	
 $students_multi = array("Rod" => array('student_number'=> '001', 'course'=>'bsit' ),
 							"Paul" => array('student_number'=> '002', 'course'=>'bsit' ),
 							"Justin" => array('student_number'=> '003', 'course'=>'bscs' ),
