@@ -74,7 +74,6 @@ foreach($category as $key => $category_type )
 
 ?>
 
-
 <?php
 function category_food()
 {

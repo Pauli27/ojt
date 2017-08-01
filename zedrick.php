@@ -13,6 +13,7 @@ function process_list($category,$shops){
 	foreach($category as $cat){
 		$output .=  ucwords($cat)	."<br>";
 		foreach($shops as $store=>$shop){
+			echo $store;
 			if($store == 'supermarket'){
 				$concat = "  <br>";
 			}else{
@@ -32,6 +33,6 @@ function process_list($category,$shops){
 	}
 
 	return $output;
-
+	
 }
 ?>
