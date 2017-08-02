@@ -15,6 +15,7 @@ session_start();
 
 // echo "<pre>",print_r($_POST['username']),"</pre>";die();
 
+//for validation
 if(isset($_POST['username']) && !empty($_POST['username'])) {
 	echo $_POST['username'];
 }else{
@@ -27,7 +28,7 @@ if(isset($_POST['username']) && !empty($_POST['username'])) {
 	<head>
 	</head>
 
-	<form name="login" method="POST" action="">
+	<form name="login" method="POST" action="">  <!--backups data when submit is succesful-->
 
 		<div>Username: <input name="username" type="text" required></div>
 		<div>Password: <input name="password" type="password" required></div>
