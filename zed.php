@@ -11,6 +11,12 @@ session_start();
 ?>
 
 <html>
+<style>
+	table{
+		margin: 0 auto;
+    	width: 70%;
+	}
+</style>
 <body>
 	<table border='1'>
 	<thead>
@@ -24,7 +30,9 @@ session_start();
 		<td>Remarks </td>
 	</thead>
 	<tbody>	
-	<?php foreach($_SESSION['logins'] as $login_data) {
+	<?php foreach($_SESSION['logins'] as $login_data) 
+	{
+
 		$math = $login_data['math'];
 		$english = $login_data['english'];
 		$english = $login_data['filipino'];

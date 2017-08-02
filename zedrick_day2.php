@@ -13,9 +13,9 @@ session_start();
 	<head>
 	</head>
 <pre>
-	<form name="login" method="POST" action="zed.php">
-		<div>Username: <input name="username" type="text" required></div>
-		<div>Course: <input name="course" type="text" required></div>
+	<form name="gradeoutput" method="POST" action="zed.php">
+			<div>Username: <input name="username" type="text" required></div>
+			<div>Course: <input name="course" type="text" required></div>
 		<div>Subject Grade<br/></div>
 		<div>Math 	 	: <input name="math" type="text" required></div>
 		<div>English 	: <input name="english" type="text" required></div>
