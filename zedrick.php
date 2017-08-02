@@ -13,13 +13,11 @@ function process_list($category,$shops){
 	foreach($category as $cat){
 		$output .=  ucwords($cat)	."<br>";
 		foreach($shops as $store=>$shop){
-			echo $store;
 			if($store == 'supermarket'){
 				$concat = "  <br>";
 			}else{
 				$concat = " shop <br>";
 			}
-
 			foreach($shop as $items){
 				if($cat == 'food' && ($items == 'meats & fishes' || $items == 'fruits' || $items == 'vegetables')){
 					$output .= "* $items in ".$store.$concat;
