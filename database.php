@@ -1,4 +1,4 @@
-<?php
+	<?php
 class DB{
 	public function conn(){
 		$conn = new mysqli("localhost","root","","table");

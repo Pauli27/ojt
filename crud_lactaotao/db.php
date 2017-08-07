@@ -19,7 +19,7 @@ class datab
 
 	public function select_specs()
 	{
-		$conn=$this->conn();
+		$conn = $this->conn();
 
 	//to select
 		$query="SELECT * from specs";
@@ -42,15 +42,14 @@ class datab
 
 
 	public function select_specs_where($id=NULL){
-		$conn=$this->$conn();
+		$conn = $this->conn();
 
 			$query="SELECT * from specs WHERE id=".$id;
-			$result=$conn->query($query);
-			$rows=array();
-
+			$result = $conn->query($query);
+			$rows = array();
 				if($result)
 				{
-					$rows=$result->fetch_assoc();
+					$rows = $result->fetch_assoc();
 
 				}
 				else
@@ -60,37 +59,40 @@ class datab
 			return $rows;	
 	}
 
-	public function insert_newproduct($data=array())
+	public function insert_newproduct($data = array())
 	{
-		$conn=$this->conn();
-		$query="INSERT into specs ('PhoneName','PhoneMemory','PhoneStorage','PhoneCamera','PhoneBattery')
-		VALUES ('".$data['PhoneName']."','".$data['PhoneMemory']."','".$data['PhoneStorage']."',
-				 	     '".$data['PhoneCamera']."','".$data['PhoneBattery']."') "; 
+		$conn = $this->conn();
+		$query = "INSERT into specs (`phonename`,`phonememory`,`phonestorage`,`phonecamera`,`phonebattery`)
+		         VALUES ('".$data['phonename']."','".$data['phonememory']."','".$data['phonestorage']."',
+				 	     '".$data['phonecamera']."','".$data['phonebattery']."') "; 
 		$result=$conn->query($query);
+		// echo $result;die();
 
 			if ($result)
 			{
-				$id=$conn->insert_id;
+				$id = $conn->insert_id;
 			}
 			else
 			{
-				$id=false;
+				$id = false;
 			}
+
+
 
 	return $id;
 
 	}
 
 
-	public function update_specs($data=array())
+	public function update_specs($data = array())
 	{
-		$conn=$this->conn();
-		$query="UPDATE specs SET PhoneName='".$data['PhoneName']".$data['PhoneMemory']".$data['PhoneMemory-']."',
-									PhoneStorage='".$data['PhoneStorage']."',PhoneCamera-'".$data['PhoneCamera']."',
-									PhoneBattery-MAH='".$data['PhoneBattery-MAH']."'
-						WHERE id=".$data['id'];
+		$conn = $this->conn();
+		$query = "UPDATE specs SET phonename ='".$data['phonename']."', phonememory ='".$data['phonememory']."',phonestorage ='".$data['phonestorage']."',
+											phonecamera ='".$data['phonecamera']."',phonebattery ='".$data['phonebattery']."'WHERE id=".$data['id'];
+									
+						
 
-			$result=$conn->$query($query);
+			$result = $conn->query($query);
 
 			return $result;
 	}
