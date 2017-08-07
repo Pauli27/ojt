@@ -11,7 +11,7 @@ $rows = $db->select_specs();
 <body>
 
 
-	<table boarder="1">
+	<table boarder="2">
 	<thead>
 		<td>PRODUCT ID</td>
 		<td>PhoneName</td>
@@ -22,35 +22,27 @@ $rows = $db->select_specs();
 		<td>EDIT</td>
 		<td>DELETE</td>
 	</thead>
-
 	<tbody>
 	<?php
-
-			 print_r($rows);die();
+			// print_r($rows);die();
 		foreach($rows as $phonespecs)
-			
-		{
-	?>
-
-
-
-	<tr> 
+			{
+			$id = $phonespecs['id'];?>
+		<tr> 
 			<td> <?php echo $phonespecs['id'] ?> </td>
 			<td> <?php echo $phonespecs['phonename'] ?> </td>
 			<td> <?php echo $phonespecs['phonememory'] ?> </td>
 			<td> <?php echo $phonespecs['phonestorage'] ?> </td>
 			<td> <?php echo $phonespecs['phonecamera'] ?> </td>
 			<td> <?php echo $phonespecs['phonebattery'] ?> </td>
-
-
 			</td>
 			 <td><a href='crud_edit.php?id=<?=$id?>'>Edit</a></td>
 			 <td><a href='crud_delete.php?id=<?=$id?>'>Delete</a></td>
 			
 	</tr>
-
-</table>
 <?php } ?>
+</tbody>
+</table>
 
 
 </body>

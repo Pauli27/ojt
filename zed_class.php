@@ -68,13 +68,13 @@ class Inventory
 
 		$conn = $this->conn();
 		$query = "UPDATE inventoryrecord SET itemname='".$inventdata['itemname']."' , description='".$inventdata['desc']."' , 
-									quantity='".$inventdata['qty']."' WHERE Id=".$inventdata['Id'];
+									quantity='".$inventdata['qty']."' WHERE Id=".$inventdata['Id'];	
 		$result = $conn->query($query);
 
 		return $result;
 
 	}
-	public function deleteinventory($id = null){
+	public function deleteinventory($id = NULL){
 		$conn = $this->conn();
 		$query = "DELETE from inventoryrecord WHERE Id=".$id;
 		// echo $query;die();
