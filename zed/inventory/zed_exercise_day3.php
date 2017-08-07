@@ -2,17 +2,21 @@
 include ('zed_class.php');
 
 $db = new Inventory;
-//echo "<pre>",print_r($_POST),"</pre>"; die();
- $id = $db->insert_inventory($_POST);
- // echo $id;die();
- // echo $id;die();
- if(isset($_POST) && !empty($_POST))
- {
-	  // echo "<pre>POST data: ",print_r($_POST),"</pre>";
- 	$rows['logins'][] = $_POST;
-	// echo "<pre>SESSION storage: ",print_r($rows),"</pre>";
+f(isset($_POST) && !empty($_POST)){
+   	$json_response = array();
+   	$id = $db->insert_inventory($_POST);
+
+   	if($id)
+		$json_response = array('err'=>0,'err_msg'=>'');   		
+   	else
+   		$json_response = array('err'=>1,'err_msg'=>'Data not inserted');   
+	// echo "<pre>POST data: ",print_r($_POST),"</pre>";
+
+	$response = json_encode($json_response);
+	echo $response;		
+	// $rows['logins'][] = $_POST;
+	exit;
 }
- 
 ?>
 
 <html>
