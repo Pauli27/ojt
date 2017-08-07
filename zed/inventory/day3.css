@@ -14,7 +14,6 @@ body{
 	}
 	#itemname,#desc,#qty,#admin{
 		margin:10px 10px;
-		font-style: Tahoma;
 		font-size: 20px;
 		color:#D5DADE  ;
 
@@ -44,6 +43,7 @@ table{
 	margin:0 auto;
 	text-align: center;
 	color: #CCD0D3;
+
 }
 a:link {
     text-decoration: none;

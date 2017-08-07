@@ -19,7 +19,6 @@ $db = new Inventory;
 
 <head>
 <link rel="stylesheet" type="text/css" href="day3.css">
-
 	</head>
 <body>
 <div id="inventory_form">
