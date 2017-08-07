@@ -15,7 +15,7 @@ body{
 	#itemname,#desc,#qty,#admin{
 		margin:10px 10px;
 		font-size: 20px;
-		color:#D5DADE  ;
+		color:#fff;  ;
 
 	}
 	#qty{
@@ -38,11 +38,12 @@ body{
 	text-align: center;
 	padding: 30px 20px;
 	box-shadow: 4px 2px 5px white;
+
 }
 table{
 	margin:0 auto;
 	text-align: center;
-	color: #CCD0D3;
+	color: #fff;
 
 }
 a:link {
@@ -58,4 +59,9 @@ h2{
 	font-style: italic;
 	font-family: Tahoma;
 	color:#828EF3  ;
+}
+thead{
+	color:black;
+	font-family: Arial;
+	font-weight: bold;
 }
