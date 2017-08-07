@@ -17,7 +17,9 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 ?>
 <html>
 	<head>
+	<link rel="stylesheet" type="text/css" href="day3.css">
 	</head>
+
 <pre>
 	<form name="gradeoutput" method="POST" action="day3_form_edit.php?id=<?=$user_data['id']?>">
 			<div>Username: <input name="username" type="text" value="<?=$user_data['username']?>" required></div>

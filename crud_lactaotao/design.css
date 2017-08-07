@@ -1,0 +1,58 @@
+body,html
+{
+	width: 100%
+}
+body{
+
+	background-color: black;
+}
+
+	#form{
+
+
+		margin: 0 auto;
+		border:5px solid #1aff1a;
+		width: 60%;
+		text-align: center;
+		padding: 30px 10px;
+		box-shadow: 4px 2px 5px white;
+		color:#33ff33; 
+		font-style: bold;
+
+	}
+
+	}
+
+	#delete{
+	
+		color:#33ff33; 
+		font-style: bold;
+
+	}
+	#edit{
+		margin: 0 auto;
+		border:5px solid #1aff1a;
+		width: 60%;
+		text-align: center;
+		padding: 30px 10px;
+		box-shadow: 4px 2px 5px white;
+		color:#33ff33; 
+		font-style: bold;
+
+	}
+	#crud{
+		margin: 0 auto;
+		border:5px solid #1aff1a;
+		width: 60%;
+		text-align: center;
+		padding: 30px 10px;
+		box-shadow: 4px 2px 5px white;
+		color:#33ff33; 
+		font-style: bold;
+
+	}
+
+
+
+
+

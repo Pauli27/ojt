@@ -8,19 +8,20 @@ $rows = $db->select_specs();
 
 
 <html>
+<head>
 <body>
 
 
 	<table boarder="2">
 	<thead>
-		<td>PRODUCT ID</td>
-		<td>PhoneName</td>
-		<td>PhoneMemory</td>
-		<td>PhoneStorage</td>
-		<td>PhoneCamera</td>
-		<td>PhoneBattery</td>
-		<td>EDIT</td>
-		<td>DELETE</td>
+		<font color="#33ff33"><td>PRODUCT ID</td></font>
+		<font color="#33ff33"><td>PhoneName</td></font>
+		<font color="#33ff33"><td>PhoneMemory</td></font>
+		<font color="#33ff33"><td>PhoneStorage</td></font>
+		<font color="#33ff33"><td>PhoneCamera</td></font>
+		<font color="#33ff33"><td>PhoneBattery</td></font>
+		<font color="#33ff33"><td>EDIT</td></font>
+		<font color="#33ff33"><td>DELETE</td></font>
 	</thead>
 	<tbody>
 	<?php
@@ -33,17 +34,16 @@ $rows = $db->select_specs();
 			<td> <?php echo $phonespecs['phonename'] ?> </td>
 			<td> <?php echo $phonespecs['phonememory'] ?> </td>
 			<td> <?php echo $phonespecs['phonestorage'] ?> </td>
-			<td> <?php echo $phonespecs['phonecamera'] ?> </td>
+			><td> <?php echo $phonespecs['phonecamera'] ?> </td>
 			<td> <?php echo $phonespecs['phonebattery'] ?> </td>
-			</td>
-			 <td><a href='crud_edit.php?id=<?=$id?>'>Edit</a></td>
-			 <td><a href='crud_delete.php?id=<?=$id?>'>Delete</a></td>
+			
+			<td><a href='crud_edit.php?id=<?=$id?>'>Edit</a></td>
+			<td><a href='crud_delete.php?id=<?=$id?>'>Delete</a></td>
 			
 	</tr>
 <?php } ?>
 </tbody>
 </table>
-
-
+</head>
 </body>
 </html>

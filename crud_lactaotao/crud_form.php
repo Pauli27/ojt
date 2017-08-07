@@ -16,7 +16,11 @@ $id = $db->insert_newproduct($_POST);
 
 <html>
 	<head>
+	<link rel="stylesheet" type="text/css" href="design.css">
+
 	</head>
+	<body>
+	<div id="form">
 	<pre>
 		<form name="edit" method="POST" action="crud_form.php">
 		<div>PhoneName:<input name="phonename" type="text" required></div>
@@ -26,6 +30,11 @@ $id = $db->insert_newproduct($_POST);
 		<div>PhoneBattery:<input name="phonebattery" type="number" required></div>
 		<div> <input type="submit" name="submit" value="Submit"></div>
 
+
+		<div><a href='crud.php?id=<?=$id?>'>Admin Options</a></div>
+
 </pre>
 </form>
+</div>
+</body>
 </html>

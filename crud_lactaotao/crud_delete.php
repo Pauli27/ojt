@@ -23,6 +23,7 @@ if (isset($_GET['id'])&&!empty($_GET['id']))
 
 <html>
 	<head>
+	
 	</head>
 <pre>
 		<p>Are you sure you want to delete this product?</p>

@@ -20,7 +20,9 @@ if(isset($_GET['id']) && !empty($_GET['id']))
 
 <html>
 	<head>
+	<link rel="stylesheet" type="text/css" href="design.css">
 	</head>
+	<body><div id="edit">
 	<pre>
 		<form name="edit" method="POST" action="crud_edit.php?id=<?$specs_data['id']?>">
 		<?php //print_r($specs_data); ?>
@@ -32,6 +34,8 @@ if(isset($_GET['id']) && !empty($_GET['id']))
 
 		<input type='hidden' name='id' value="<?=$specs_data['id']?>">
 		<div> <input type="submit" name="submit" value="Submit"></div>
-
+</form>
+</div>
 </pre>
+</body>
 </html>
