@@ -2,7 +2,7 @@
 include ('zed_class.php');
 
 $db = new Inventory;
-// echo "<pre>",print_r($_POST),"</pre>"; die();
+//echo "<pre>",print_r($_POST),"</pre>"; die();
  $id = $db->insert_inventory($_POST);
  // echo $id;die();
  // echo $id;die();
@@ -17,17 +17,21 @@ $db = new Inventory;
 
 <html>
 
-<head>	</head>
+<head>
+<link rel="stylesheet" type="text/css" href="day3.css">
+
+	</head>
 <body>
 <div id="inventory_form">
-<pre>
+
+<h1>Welcome</h1>
 	<form name="inventory" method="POST" action="zed_exercise_day3.php">
-	<div>Item Name: <input type="text" name="itemname"></div>
-	<div>Description: <input type="text" name="desc" ></div>
-	<div>Qty: <input type="text" name="qty" ></div>
-	<div> <input type="submit" name="submit" value="Submit">
-	<div><a href='zed_exercise3.php'>ADMIN</a></div>
-</pre>
+	<div id="itemname">Item Name: <input type="text" name="itemname"></div>
+	<div id="desc">Description:   <input type="text" name="desc" ></div>
+	    <div id="qty">  Qty:      <input type="text" name="qty" ></div>
+	<div id="submit"> <input type="submit" name="submit" value="Submit">
+	<div id="admin"><a href='zed_exercise3.php'>ADMIN</a></div>
+
 </form>
 </div>
 
