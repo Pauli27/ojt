@@ -20,9 +20,11 @@ $id = $db->insert_newproduct($_POST);
 
 	</head>
 	<body>
+
 	<div id="form">
 	<pre>
 		<form name="edit" method="POST" action="crud_form.php">
+		<div><h1>INPUT THE PHONE'S DETAILS</h1></div>
 		<div>PhoneName:<input name="phonename" type="text" required></div>
 		<div>PhoneMemory:<input name="phonememory" type="number" required></div>
 		<div>PhoneStorage:<input name="phonestorage" type="number" required></div>
