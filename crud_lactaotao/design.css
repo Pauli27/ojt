@@ -4,14 +4,14 @@ body,html
 }
 body{
 
-	background-color: black;
+	background-color: #004d00;
 }
 
 	#form{
 
 
 		margin: 0 auto;
-		border:5px solid #1aff1a;
+		border:5px solid #000066;
 		width: 60%;
 		text-align: center;
 		padding: 30px 10px;
@@ -31,7 +31,7 @@ body{
 	}
 	#edit{
 		margin: 0 auto;
-		border:5px solid #1aff1a;
+		border:5px solid #000066;
 		width: 60%;
 		text-align: center;
 		padding: 30px 10px;
@@ -42,7 +42,7 @@ body{
 	}
 	#crud{
 		margin: 0 auto;
-		border:5px solid #1aff1a;
+		border:5px solid #000066;
 		width: 60%;
 		text-align: center;
 		padding: 30px 10px;

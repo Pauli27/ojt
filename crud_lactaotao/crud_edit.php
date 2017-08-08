@@ -24,8 +24,9 @@ if(isset($_GET['id']) && !empty($_GET['id']))
 	</head>
 	<body><div id="edit">
 	<pre>
-		<form name="edit" method="POST" action="crud_edit.php?id=<?$specs_data['id']?>">
+		
 		<?php //print_r($specs_data); ?>
+		<form name="edit" method="POST" onsubmit="return validate(this);">
 		<div>PhoneName:<input name="phonename" type="text"  value="<?=$specs_data['phonename']?>"required></div>
 		<div>PhoneMemory:<input name="phonememory" type="number" value="<?=$specs_data['phonememory']?>"required></div>
 		<div>PhoneStorage:<input name="phonestorage" type="number" value="<?=$specs_data['phonestorage']?>"required></div>
@@ -34,8 +35,29 @@ if(isset($_GET['id']) && !empty($_GET['id']))
 
 		<input type='hidden' name='id' value="<?=$specs_data['id']?>">
 		<div> <input type="submit" name="submit" value="Submit"></div>
+
+
+		<div><a href='crud_form.php?id=<?=$id?>'>BACK</a></div>
+
+ 		<script src="text/javascript">
+
+ </script>
+
+<script>
+function validate(form) {
+	if (confirm("edit account?")){
+		alert('done!');
+		return true;
+	}
+	else {
+		alert('Action failed to execute');
+		return false;
+	}
+}
+
+</script>
+</body>
+</html>		
 </form>
 </div>
 </pre>
-</body>
-</html>
