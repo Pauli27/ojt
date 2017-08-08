@@ -6,9 +6,9 @@ if(isset($_POST) && !empty($_POST)){
 // echo "<pre>",print_r($_POST),"</pre>";die();
  $result = $db->deleteinventory($_POST['id']);		
 
- // if($result){
- // 	header('Location: zed_exercise3.php');
- // }
+ if($result){
+ 	header('Location: zed_exercise3.php');
+ }
 }
 if(isset($_GET['Id']) && !empty($_GET['Id'])){
 	$id = $_GET['Id'];

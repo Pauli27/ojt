@@ -2,11 +2,11 @@ body,html{
 width: 100%
 }
 body{
-	background-color: #7C8080;
+	background-color: #3a4040;
 }
 	#inventory_form{
 		margin: 0 auto;
-		border: 3px solid black;
+		border: 3px solid #b9dad3;
 		width: 70%;
 		text-align: center;
 		padding: 50px 20px;
@@ -26,17 +26,17 @@ body{
 	}
 	a {
     text-decoration: none;
-    color: black;
+    color: #FFF;
     }
     a:hover{
-    	background-color:white;
+    	background-color:black;
     }
  #admin_result{
 	margin:0 auto;
-	border: 3px solid black;
+	border: 3px solid #b9dad3;
 	width: 50%;
 	text-align: center;
-	padding: 30px 20px;
+	padding: 10px 10px;
 	box-shadow: 4px 2px 5px white;
 
 }
@@ -61,7 +61,17 @@ h2{
 	color:#828EF3  ;
 }
 thead{
-	color:black;
+	color:#e2ac45;
 	font-family: Arial;
 	font-weight: bold;
+}
+h1{
+	color :rgb(170, 190, 222);
+}
+#b{
+	top:40px;
+	margin-bottom: 30px;
+	font-family: Arial;
+	font-size: 20px;
+	color:#fff;
 }

@@ -14,7 +14,9 @@ $rows = $db->select_inventory();
 	</style>
 	</head>
 <body>
+
 <div id="admin_result">
+<div id="b"><a href="zed_exercise_day3.php">BACK</a></div>
 	<table border="1">
 		<thead>
 		<td>Id</td>

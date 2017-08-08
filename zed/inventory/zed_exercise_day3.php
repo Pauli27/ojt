@@ -45,7 +45,6 @@ if(isset($_POST) && !empty($_POST)){
 	    var itemname = $("input[name=itemname]").val();
 		var desc = $("input[name=desc]").val();
 		var qty = $("input[name=qty]").val();
-
 		$.post('zed_exercise_day3.php',{'itemname':itemname,'desc':desc,
 								'qty':qty},function(response){
 		  var parse = JSON.parse(response);

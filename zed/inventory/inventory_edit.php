@@ -25,6 +25,7 @@ if(isset($_GET['Id']) && !empty($_GET['Id'])){
 <div id="inventory_form">
  <?php //echo var_dump($inventorydata);die();?>
 	<form name="inventory" method="POST" onsubmit="return ConfirmEdit()">
+	<pre>
 	<div>Item Name: <input type="text" name="itemname" value="<?=$inventorydata['itemname']?>"></div>
 	<div>Description: <input type="text" name="desc" value="<?=$inventorydata['description']?>"></div>
 	<div>Qty: <input type="text" name="qty" value="<?=$inventorydata['quantity']?>"></div>
@@ -32,7 +33,7 @@ if(isset($_GET['Id']) && !empty($_GET['Id'])){
 	<input type='hidden' name='id' value="<?=$inventorydata['Id']?>">
 		<div> <input type="submit" name="submit" value="Submit" ></div>
 		<div id="admin"><a href='zed_exercise3.php'>Back</a></div>
-	
+	</pre>
 </form>
 </div>
 <script>
