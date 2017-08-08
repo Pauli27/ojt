@@ -45,8 +45,8 @@ if(isset($_GET['id']) && !empty($_GET['id']))
 
 <script>
 function validate(form) {
-	if (confirm("edit account?")){
-		alert('done!');
+	if (confirm("Edit Details?")){
+		alert('Command Succesful!');
 		return true;
 	}
 	else {
