@@ -1,4 +1,4 @@
-<?php
+			<?php
 include ('zed_class.php');
 
 $db = new Inventory;

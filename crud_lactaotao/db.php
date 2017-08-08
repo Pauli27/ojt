@@ -61,10 +61,9 @@ class datab
 
 	public function insert_newproduct($data = array())
 	{
-		$conn = $this->conn();
-		$query = "INSERT into specs (`phonename`,`phonememory`,`phonestorage`,`phonecamera`,`phonebattery`)
-		         VALUES ('".$data['phonename']."','".$data['phonememory']."','".$data['phonestorage']."',
-				 	     '".$data['phonecamera']."','".$data['phonebattery']."') "; 
+		
+		$conn = $this->conn();$query = "INSERT into specs (`phonename`,`phonememory`,`phonestorage`,`phonecamera`,`phonebattery`)
+		 VALUES ('".$data['phonename']."','".$data['phonememory']."','".$data['phonestorage']."', '".$data['phonecamera']."','".$data['phonebattery']."') "; 
 		$result=$conn->query($query);
 		// echo $result;die();
 
